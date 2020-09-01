@@ -1,0 +1,4 @@
+rootProject.name = 'podiyumm-song'
+include 'podiyumm-song-api'
+include 'podiyumm-song-app'
+
