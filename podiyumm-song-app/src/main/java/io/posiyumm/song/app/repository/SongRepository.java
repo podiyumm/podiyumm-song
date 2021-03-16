@@ -1,7 +1,9 @@
 package io.posiyumm.song.app.repository;
 
-import io.posiyumm.song.app.entity.SongEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
+import javax.enterprise.context.ApplicationScoped;
+import io.posiyumm.song.app.entity.Song;
+import io.quarkus.mongodb.panache.PanacheMongoRepository;
 
-public interface SongRepository extends JpaRepository<SongEntity, Long> {
+@ApplicationScoped
+public class SongRepository implements PanacheMongoRepository<Song> {
 }
