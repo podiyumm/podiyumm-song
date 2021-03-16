@@ -1,7 +1,7 @@
 package io.posiyumm.song.app.mapper;
 
-import io.posiyumm.song.api.Song;
-import io.posiyumm.song.app.entity.SongEntity;
+import java.util.List;
+import io.posiyumm.song.app.entity.Song;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -9,7 +9,11 @@ import org.mapstruct.factory.Mappers;
 public interface SongMapper {
     SongMapper INSTANCE = Mappers.getMapper( SongMapper.class );
 
-    Song songEntityToSong(SongEntity songEntity);
-
-    SongEntity songToSongEntity(Song song);
+//    io.posiyumm.song.api.Song toSong(Song songEntity);
+//
+//    Song toSongEntity(io.posiyumm.song.api.Song song);
+//
+//    List<io.posiyumm.song.api.Song> toSongs(List<Song> songEntity);
+//
+//    List<Song> toSongEntities(List<io.posiyumm.song.api.Song> song);
 }

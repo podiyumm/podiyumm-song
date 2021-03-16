@@ -1,0 +1,132 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "202102180809",
+        "author": "Peter Butkovic",
+        "comment": "Load songs",
+        "changes": [
+          {
+            "insertMany": {
+              "collectionName": "song",
+              "documents": {
+                "$rawJson": [
+                  {
+                    "title": "Chcem vojsť do Pánových brán",
+                    "text": [
+                      "{sov}",
+                      "[C]Chcem vojsť do Pánových [F]brán,",
+                      "srdce [C]chcem mať plné [Ami]chvál,",
+                      "vstúpiť [C]do Pánových [F]siení s osla[G]vou.",
+                      "Toto [C]je deň, ktorý [F]Pán pre mňa [C]daro[Ami]val,",
+                      "chcem [Dmi]tešiť sa, môj [G]Pán mi šťastie [C]dal.",
+                      "{eov}",
+                      "{soc}",
+                      " /: ON [C]PRAVÉ ŠŤASTIE [F]DAL, ",
+                      "SOM [C]VĎAČNÝ, PLNÝ [Ami]CHVÁL.",
+                      "CHCEM [Dmi]TEŠIŤ SA, ",
+                      "MôJ [G]PÁN MI ŠŤASTIE [C]DAL.[G]:/",
+                      "{eoc}"
+                    ]
+                  },
+                  {
+                    "title": "Jak jeleň dychtí za vodou",
+                    "text": [
+                      "{sov: Verse 1}",
+                      "[Emi]Jak [C]jeleň [D]dychtí za vo[Emi]dou, ja, [C]Bože, [D]túžim za teb[Emi]ou. 3x",
+                      "Jak [C]jeleň [D]dychtí za vo[Emi]dou, ja, [C]Bože, [Emi]túžim za teb[D]ou.",
+                      "{eov}",
+                      "{soc}",
+                      "Zošli {chod e}dážď, zošli [C]dážď, dosť [G]bolo su[D]cha",
+                      "Zošli {chod e}dážď, zošli [C]dážď, dosť [G]Svätého Du[D]cha",
+                      "Zošli {chod e}dážď, zošli [C]dážď, dosť [G]nové let[D]nice",
+                      "Zošli {chod e}dážď, zošli [C]dážď, dosť [G]rozjasaj srd[D]ce",
+                      "{eoc}"
+                    ]
+                  },
+                  {
+                    "title": "Chválim Ťa Ježiš",
+                    "text": [
+                      "{soc}",
+                      "[G]Chválim [D]Ťa Jež[C]iš [D] 4x",
+                      "{eoc}",
+                      "{sob}",
+                      "Ani [G]oko nevidelo ani [D]ucho nepočulo čo [C]má pán pripravené pre [D]nás.  2x",
+                      "{eob}",
+                      "{sov}",
+                      "Pre [G]tých[D] ktorí[C] milujú, ",
+                      "[D]pre [G]tých[D] ktorí[C] vzývajú (meno pána),",
+                      "[D]pre [G]tých[D] ktorí[C] uveria, ",
+                      "[D]pre [G]tých[]D ktorí [C]chvália tvoje [D]meno Pane.",
+                      "{eov}"
+                    ]
+                  },
+                  {
+                    "title": "Požehnané meno má Pán",
+                    "text": [
+                      "{sov}",
+                      "[D] [(G,fis)] /: Požehnané meno má [(A,Hmi)]Pán :/ 3x",
+                      "Najvyšší. [A] ",
+                      "{eov}",
+                      "{soc}",
+                      "Viem, že meno Pána, je mô[D]j úkryt[G, D, hmi], ",
+                      "v boji sa v ňom môžem skry[emi]ť, v bezpečí žiť[A, D].",
+                      "{eoc}",
+                      "{sov}",
+                      "Oslávené meno má Pán...",
+                      "{eov}",
+                      "{sov}",
+                      "Svätý, svätý, svätý je Pán...",
+                      "{eov}",
+                      "{sov}",
+                      "Ježiš, toto meno má Pán...",
+                      "{eov}"
+                    ]
+                  },
+                  {
+                    "title": "Si môj Pán, Ježiš Kráľ",
+                    "text": [
+                      "{soc}",
+                      "Si môj [d]Pán, Ježiš [C]Krá[a]ľ.",
+                      "Každý [F]deň sa zhová[G]ram s Tebou [C]rád.",
+                      "{eoc}",
+                      "{sov}",
+                      "slnieč[C]ko a celý [a]svet,",
+                      "vysa[d]dil si aj náš [G]sad, mám Ťa [C]rád.",
+                      "{comment: Chorus}",
+                      "{eov}",
+                      "{sov}",
+                      "každý hriech si zo mňa sňal,",
+                      "odpustil si toľkokrát, mám Ťa rád.",
+                      "{comment: Chorus}",
+                      "{eov}",
+                      "{sov}",
+                      "aby som sa radoval,",
+                      "si môj verný kamarát, mám Ťa rád.",
+                      "{comment: Chorus}",
+                      "{eov}"
+                    ]
+                  },
+                  {
+                    "title": "Ty si Pánom, Ty si Kráľom",
+                    "text": [
+                      "{sov}",
+                      "[D]Ty si Pánom, [A]Ty si Kráľom,",
+                      "[H]Ó Kráľom je [G]Boh. ",
+                      "{eov}",
+                      "{soc}",
+                      "/: P[D]ozdvihnime svoje srdcia,",
+                      " [A]pozdvihnime svoje dlane, [Hmi]postavme sa ",
+                      "pred tvár Pána a [G]velebme Ho.:/  ",
+                      "{eoc}"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

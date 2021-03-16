@@ -1,0 +1,9 @@
+quarkus:
+  mongodb:
+    connection-string: mongodb://localhost:27017/podiyumm?socketTimeoutMS=1000&connectTimeoutMS=1000&serverSelectionTimeoutMS=1000
+    write-concern:
+      journal: false
+    database: podiyumm
+  liquibase:
+    migrate-at-start: true
+    change-log: db/changeLog.xml

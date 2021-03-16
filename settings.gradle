@@ -1,4 +1,14 @@
-rootProject.name = 'podiyumm-song'
-include 'podiyumm-song-api'
-include 'podiyumm-song-app'
+pluginManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+        id 'io.quarkus' version "${quarkusPluginVersion}"
+    }
+}
 
+rootProject.name = 'podiyumm-song'
+//include 'podiyumm-song-api'
+include 'podiyumm-song-app'
