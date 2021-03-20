@@ -7,3 +7,15 @@ quarkus:
   liquibase:
     migrate-at-start: true
     change-log: db/changeLog.xml
+
+
+# dev profile only?
+  http:
+    cors:
+      ~: true
+      origins: http://localhost:3000
+      methods: GET,PUT,POST
+      headers: X-Custom
+      exposed-headers: Content-Disposition
+      access-control-max-age: 24H
+      access-control-allow-credentials: true
