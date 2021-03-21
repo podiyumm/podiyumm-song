@@ -1,8 +1,8 @@
-package io.posiyumm.song.app.resource;
+package io.podiyumm.song.app.resource;
 
 import org.bson.types.ObjectId;
-import io.posiyumm.song.app.entity.Song;
-import io.posiyumm.song.app.repository.SongRepository;
+import io.podiyumm.song.app.entity.Song;
+import io.podiyumm.song.app.repository.SongRepository;
 import io.quarkus.mongodb.rest.data.panache.PanacheMongoRepositoryResource;
 import io.quarkus.rest.data.panache.ResourceProperties;
 

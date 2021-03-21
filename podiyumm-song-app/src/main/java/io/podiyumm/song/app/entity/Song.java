@@ -1,10 +1,11 @@
-package io.posiyumm.song.app.entity;
+package io.podiyumm.song.app.entity;
 
 import io.quarkus.mongodb.panache.MongoEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.FieldNameConstants;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -15,6 +16,7 @@ import org.bson.types.ObjectId;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@FieldNameConstants
 public class Song {
 
     private ObjectId id;

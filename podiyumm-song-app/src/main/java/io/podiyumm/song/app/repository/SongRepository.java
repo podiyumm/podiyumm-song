@@ -1,7 +1,7 @@
-package io.posiyumm.song.app.repository;
+package io.podiyumm.song.app.repository;
 
 import javax.enterprise.context.ApplicationScoped;
-import io.posiyumm.song.app.entity.Song;
+import io.podiyumm.song.app.entity.Song;
 import io.quarkus.mongodb.panache.PanacheMongoRepository;
 
 @ApplicationScoped

@@ -47,17 +47,14 @@ dependencies {
 
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
-    testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+//    testImplementation 'io.quarkus:quarkus-panache-mock'
+    testImplementation 'io.quarkus:quarkus-junit5-mockito'
 
-//    testImplementation 'org.testcontainers:junit-jupiter'
-//    testCompile "org.testcontainers:mongodb:${testcontainersVersion}"
-//    implementation 'org.testcontainers:postgresql'
-//    testImplementation 'com.h2database:h2'
+    testImplementation "org.testcontainers:mongodb:1.15.2"
+    testImplementation "org.testcontainers:junit-jupiter:1.15.2"
 
     compile "org.mapstruct:mapstruct:${mapstructVersion}"
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
-
-//    compile project(':podiyumm-song-api')
 
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"

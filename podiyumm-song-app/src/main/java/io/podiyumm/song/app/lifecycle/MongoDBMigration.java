@@ -1,4 +1,4 @@
-package io.posiyumm.song.app.lifecycle;
+package io.podiyumm.song.app.lifecycle;
 
 import java.util.Optional;
 import javax.enterprise.context.ApplicationScoped;
@@ -16,7 +16,7 @@ import lombok.SneakyThrows;
 public class MongoDBMigration {
 
     @ConfigProperty(name = "quarkus.mongodb.connection-string")
-    String connectionString;
+    Optional<String> connectionString;
 
     @ConfigProperty(name = "quarkus.mongodb.credentials.username")
     Optional<String> username;
@@ -24,10 +24,15 @@ public class MongoDBMigration {
     @ConfigProperty(name = "quarkus.mongodb.credentials.password")
     Optional<String> password;
 
+    @ConfigProperty(name = "quarkus.liquibase.migrate-at-start")
+    boolean liquibaseEnabled;
+
     @SneakyThrows
     void onStart(@Observes StartupEvent ev) {
-        Database database = (MongoLiquibaseDatabase) DatabaseFactory.getInstance().openDatabase(connectionString, username.orElse(null), password.orElse(null), null , null);
-        Liquibase liquiBase = new Liquibase("db/changeLog.json", new ClassLoaderResourceAccessor(), database);
-        liquiBase.update("");
+        if (liquibaseEnabled) {
+            Database database = (MongoLiquibaseDatabase) DatabaseFactory.getInstance().openDatabase(connectionString.get(), username.orElse(null), password.orElse(null), null, null);
+            Liquibase liquiBase = new Liquibase("db/changeLog.json", new ClassLoaderResourceAccessor(), database);
+            liquiBase.update("");
+        }
     }
 }

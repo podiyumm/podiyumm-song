@@ -1,7 +1,5 @@
-package io.posiyumm.song.app.mapper;
+package io.podiyumm.song.app.mapper;
 
-import java.util.List;
-import io.posiyumm.song.app.entity.Song;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
