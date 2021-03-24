@@ -12,6 +12,17 @@
               "documents": {
                 "$rawJson": [
                   {
+                    "title": "Bůh je síla má",
+                    "text": [
+                      "[Emi]Bůh je síla má [Hmi]i vojska [C]mé[D]ho, [Emi]On způsobí [C]volnou cestu [Hmi]mou.",
+                      "[Emi]neboť dal mi štít [Hmi]spasení [C]mé[D]ho a [Emi]dobrotivost Jeho [C]zvelebila [D]mne.",
+                      "{soc}",
+                      "/: [G]Neboť kdo je [Emi]Bohem [C]kromě Hospo[D]dina.",
+                      "[G]A kdo je ská[Emi]lou kromě [C]Boha naše[D][Emi]ho. :/",
+                      "{eoc}"
+                    ]
+                  },
+                  {
                     "title": "Chcem vojsť do Pánových brán",
                     "text": [
                       "{sov}",
@@ -65,21 +76,21 @@
                     "title": "Požehnané meno má Pán",
                     "text": [
                       "{sov}",
-                      "[D] [(G,fis)] /: Požehnané meno má [(A,Hmi)]Pán :/ 3x",
-                      "Najvyšší. [A] ",
+                      "/: [C]Požehnané meno má Pán, [F]požehnané meno má P[G]án,",
+                      "[Emi]požehnané meno má [Ami]Pán, [F]Najvyš[G]ší. :/",
                       "{eov}",
                       "{soc}",
-                      "Viem, že meno Pána, je mô[D]j úkryt[G, D, hmi], ",
-                      "v boji sa v ňom môžem skry[emi]ť, v bezpečí žiť[A, D].",
+                      "[C]Viem, že meno Pána [F]je môj ú[C]kryt,",
+                      "v boji sa v ňom [G]môžem skryť a [F]v bezpečí [C]žiť.",
                       "{eoc}",
                       "{sov}",
-                      "Oslávené meno má Pán...",
+                      "Svätý, svätý, svätý je Pán.",
                       "{eov}",
                       "{sov}",
-                      "Svätý, svätý, svätý je Pán...",
+                      "Oslávené meno má Pán.",
                       "{eov}",
                       "{sov}",
-                      "Ježiš, toto meno má Pán...",
+                      "Ježiš - toto meno má Pán.",
                       "{eov}"
                     ]
                   },
@@ -91,16 +102,19 @@
                       "Každý [F]deň sa zhová[G]ram s Tebou [C]rád.",
                       "{eoc}",
                       "{sov}",
+                      "Ty si [F]stvoril strom aj [G]kvet,",
                       "slnieč[C]ko a celý [Ami]svet,",
                       "vysa[Dmi]dil si aj náš [G]sad, mám Ťa [C]rád.",
                       "{comment: Chorus}",
                       "{eov}",
                       "{sov}",
+                      "Ty si nebu hviezdy dal,",
                       "každý hriech si zo mňa sňal,",
                       "odpustil si toľkokrát, mám Ťa rád.",
                       "{comment: Chorus}",
                       "{eov}",
                       "{sov}",
+                      "Ty si vtákom piesne dal,",
                       "aby som sa radoval,",
                       "si môj verný kamarát, mám Ťa rád.",
                       "{comment: Chorus}",
