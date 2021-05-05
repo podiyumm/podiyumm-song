@@ -35,14 +35,14 @@ jobs:
         run: ./gradlew build
       # share artifact across jobs
       - name: 'Tar files'
-        run: tar -cvf quarkus-app.tar build/quarkus-app
+        run: tar -cvf quarkus-app.tar build/lib build/*-runner.jar
       - uses: actions/upload-artifact@v2
         with:
           name: quarkus-app
           path: quarkus-app.tar
 
   docker:
-    name: docker ms-population
+    name: docker
     runs-on: ubuntu-latest
     needs: build
 #    if: github.ref == 'refs/heads/master'
@@ -55,7 +55,7 @@ jobs:
         with:
           name: quarkus-app
       - name: 'Untar files'
-        run: mkdir -p build && tar -xvf ../quarkus-app.tar build
+        run: tar -xvf ../quarkus-app.tar
       - uses: madhead/read-java-properties@latest
         id: props
         with:
