@@ -55,7 +55,7 @@ jobs:
         with:
           name: quarkus-app
       - name: 'Untar files'
-        run: tar -xvf ../quarkus-app.tar
+        run: tar -xvf quarkus-app.tar
       - uses: madhead/read-java-properties@latest
         id: props
         with:
