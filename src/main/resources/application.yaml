@@ -20,8 +20,10 @@ quarkus:
       access-control-allow-credentials: true
 
 "%prod":
+
   quarkus:
     vault:
+      url: http://vault:8200
       credentials-provider:
         podiyumm:
           database-credentials-role: podiyumm-song
