@@ -1,9 +1,9 @@
 quarkus:
   mongodb:
     connection-string: mongodb://localhost:27017/podiyumm-song?socketTimeoutMS=1000&connectTimeoutMS=1000&serverSelectionTimeoutMS=1000
-    credentials:
-      username: podiyumm-song
-      password: podiyumm-song
+#    credentials:
+#      username: podiyumm-song
+#      password: podiyumm-song
     write-concern:
       journal: false
     database: podiyumm-song
