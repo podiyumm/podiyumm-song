@@ -30,20 +30,10 @@ import javax.inject.Inject;
 @QuarkusTest
 @Disabled
 public class SongResourceTest {
-//
-//    @Inject
-//    SongResource songResource;
-//
     @InjectMock
     SongRepository songRepository;
-//
     private Song song;
     private List<Song> songs ;
-
-//    @BeforeEach
-//    public void beforeEach() {
-//        PanacheMock.mock(Song.class);
-//    }
 
     @Test
     public void songGet() {
@@ -53,21 +43,7 @@ public class SongResourceTest {
         Mockito.when(query.page(Mockito.any())).thenReturn(query);
         Mockito.when(query.firstResultOptional()).thenReturn(Optional.of(song));
 
-//        Page page = new Page(1,10);
-//        when(query.page()).thenReturn(page);
         when(songRepository.findAll()).thenReturn(query);
-//        when(songRepository.list(any(String.class), any())).thenReturn(query);
-////        songs = new ArrayList<>();
-//        PanacheQuery query = Mockito.mock(PanacheQuery.class);
-////
-////        Page page = new Page(1,10);
-////        when(query.page()).thenReturn(page);
-////
-////        when(query.page(Mockito.any())).thenReturn(query);
-//        when(query.list()).thenReturn(songs);
-//        when(songRepository.findAll()).thenReturn(query);
-
-//        assertEquals(Collections.emptyList(), songResource.list(new Page(1,10), Sort.by(Song.Fields.id)));
         given()
           .when().get("/song")
           .then()

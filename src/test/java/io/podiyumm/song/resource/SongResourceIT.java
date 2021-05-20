@@ -34,7 +34,7 @@ public class SongResourceIT {
         public Map<String, String> start() {
             SongResourceIT.mongoDBContainer.start();
             // the way to dynamically expose allocated port
-            return Maps.of("quarkus.mongodb.connection-string", "mongodb://" + mongoDBContainer.getContainerIpAddress() + ":" + mongoDBContainer.getFirstMappedPort() + "/podiyumm");
+            return Maps.of("quarkus.mongodb.connection-string", "mongodb://" + mongoDBContainer.getContainerIpAddress() + ":" + mongoDBContainer.getFirstMappedPort() + "/podiyumm-song");
         }
 
         @Override
