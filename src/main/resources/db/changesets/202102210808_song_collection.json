@@ -1,0 +1,51 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "202102210808_song_collection",
+        "author": "Peter Butkovic",
+        "comment": "Create song collection",
+        "changes": [
+          {
+            "createCollection": {
+              "collectionName": "song",
+              "options": {
+                "$rawJson": {
+                  "validator": {
+                    "$jsonSchema": {
+                      "bsonType": "object",
+                      "required": [
+                        "title",
+                        "text"
+                      ],
+                      "properties": {
+                        "title": {
+                          "bsonType": "string",
+                          "description": "The Title"
+                        },
+                        "text": {
+                          "bsonType": "string",
+                          "description": "The Text in ChordPro format.",
+                          "bsonType": "array",
+                          "minItems": 1,
+                          "uniqueItems": false,
+                          "additionalProperties": false,
+                          "items": {
+                            "bsonType": "string",
+                            "additionalProperties": false
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "validationAction": "error",
+                  "validationLevel": "strict"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
