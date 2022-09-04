@@ -1,0 +1,189 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "202102180809",
+        "author": "Peter Butkovic",
+        "comment": "Load songs",
+        "changes": [
+          {
+            "insertMany": {
+              "collectionName": "song",
+              "documents": {
+                "$rawJson": [
+                  {
+                    "title": "B\u016fh je s\u00edla m\u00e1",
+                    "text": [
+                      "[Emi]B\u016fh je s\u00edla m\u00e1 [Hmi]i vojska [C]m\u00e9[D]ho, [Emi]On zp\u016fsob\u00ed [C]volnou cestu [Hmi]mou.",
+                      "[Emi]nebo\u0165 dal mi \u0161t\u00edt [Hmi]spasen\u00ed [C]m\u00e9[D]ho a [Emi]dobrotivost Jeho [C]zvelebila [D]mne.",
+                      "{soc}",
+                      "/: [G]Nebo\u0165 kdo je [Emi]Bohem [C]krom\u011b Hospo[D]dina.",
+                      "[G]A kdo je sk\u00e1[Emi]lou krom\u011b [C]Boha na\u0161e[D]ho 2na\u0161e[Emi]ho. :/",
+                      "{eoc}"
+                    ]
+                  },
+                  {
+                    "title": "Chcem vojs\u0165 do P\u00e1nov\u00fdch br\u00e1n",
+                    "text": [
+                      "{sov}",
+                      "[C]Chcem vojs\u0165 do P\u00e1nov\u00fdch [F]br\u00e1n,",
+                      "srdce [C]chcem ma\u0165 pln\u00e9 [Ami]chv\u00e1l,",
+                      "vst\u00fapi\u0165 [C]do P\u00e1nov\u00fdch [F]sien\u00ed s osla[G]vou.",
+                      "Toto [C]je de\u0148, ktor\u00fd [F]P\u00e1n pre m\u0148a [C]daro[Ami]val,",
+                      "chcem [Dmi]te\u0161i\u0165 sa, m\u00f4j [G]P\u00e1n mi \u0161\u0165astie [C]dal.",
+                      "{eov}",
+                      "{soc}",
+                      " /: ON [C]PRAV\u00c9 \u0160\u0164ASTIE [F]DAL, ",
+                      "SOM [C]V\u010eA\u010cN\u00dd, PLN\u00dd [Ami]CHV\u00c1L.",
+                      "CHCEM [Dmi]TE\u0160I\u0164 SA, ",
+                      "M\u00f4J [G]P\u00c1N MI \u0160\u0164ASTIE [C]DAL.[G]:/",
+                      "{eoc}"
+                    ]
+                  },
+                  {
+                    "title": "Chv\u00e1lim \u0164a Je\u017ei\u0161",
+                    "text": [
+                      "{soc}",
+                      "[G]Chv\u00e1lim [D]\u0164a Je\u017e[C]i\u0161 [D] 4x",
+                      "{eoc}",
+                      "{sob}",
+                      "Ani [G]oko nevidelo ani [D]ucho nepo\u010dulo \u010do [C]m\u00e1 p\u00e1n pripraven\u00e9 pre [D]n\u00e1s.  2x",
+                      "{eob}",
+                      "{sov}",
+                      "Pre [G]t\u00fdch[D] ktor\u00ed[C] miluj\u00fa, ",
+                      "[D]pre [G]t\u00fdch[D] ktor\u00ed[C] vz\u00fdvaj\u00fa (meno p\u00e1na),",
+                      "[D]pre [G]t\u00fdch[D] ktor\u00ed[C] uveria, ",
+                      "[D]pre [G]t\u00fdch[]D ktor\u00ed [C]chv\u00e1lia tvoje [D]meno Pane.",
+                      "{eov}"
+                    ]
+                  },
+                  {
+                    "title": "Po\u017eehnan\u00e9 meno m\u00e1 P\u00e1n",
+                    "text": [
+                      "{sov}",
+                      "/: [C]Po\u017eehnan\u00e9 meno m\u00e1 P\u00e1n, [F]po\u017eehnan\u00e9 meno m\u00e1 P[G]\u00e1n,",
+                      "[Emi]po\u017eehnan\u00e9 meno m\u00e1 [Ami]P\u00e1n, [F]Najvy\u0161[G]\u0161\u00ed. :/",
+                      "{eov}",
+                      "{soc}",
+                      "[C]Viem, \u017ee meno P\u00e1na [F]je m\u00f4j \u00fa[C]kryt,",
+                      "v boji sa v \u0148om [G]m\u00f4\u017eem skry\u0165 a [F]v bezpe\u010d\u00ed [C]\u017ei\u0165.",
+                      "{eoc}",
+                      "{sov}",
+                      "Sv\u00e4t\u00fd, sv\u00e4t\u00fd, sv\u00e4t\u00fd je P\u00e1n.",
+                      "{eov}",
+                      "{sov}",
+                      "Osl\u00e1ven\u00e9 meno m\u00e1 P\u00e1n.",
+                      "{eov}",
+                      "{sov}",
+                      "Je\u017ei\u0161 - toto meno m\u00e1 P\u00e1n.",
+                      "{eov}"
+                    ]
+                  },
+                  {
+                    "title": "Si m\u00f4j P\u00e1n",
+                    "text": [
+                      "{soc}",
+                      "Si m\u00f4j [Dmi]P\u00e1n, Je\u017ei\u0161 [C]Kr\u00e1[Ami]\u013e.",
+                      "Ka\u017ed\u00fd [F]de\u0148 sa zhov\u00e1[G]ram s Tebou [C]r\u00e1d.",
+                      "{eoc}",
+                      "{sov}",
+                      "Ty si [F]stvoril strom aj [G]kvet,",
+                      "slnie\u010d[C]ko a cel\u00fd [Ami]svet,",
+                      "vysa[Dmi]dil si aj n\u00e1\u0161 [G]sad, m\u00e1m \u0164a [C]r\u00e1d.",
+                      "{comment: Chorus}",
+                      "{eov}",
+                      "{sov}",
+                      "Ty si nebu hviezdy dal,",
+                      "ka\u017ed\u00fd hriech si zo m\u0148a s\u0148al,",
+                      "odpustil si to\u013ekokr\u00e1t, m\u00e1m \u0164a r\u00e1d.",
+                      "{comment: Chorus}",
+                      "{eov}",
+                      "{sov}",
+                      "Ty si vt\u00e1kom piesne dal,",
+                      "aby som sa radoval,",
+                      "si m\u00f4j vern\u00fd kamar\u00e1t, m\u00e1m \u0164a r\u00e1d.",
+                      "{comment: Chorus}",
+                      "{eov}"
+                    ]
+                  },
+                  {
+                    "title": "Ty si P\u00e1nom",
+                    "text": [
+                      "{sov}",
+                      "[D]Ty si P\u00e1nom, [A]Ty si Kr\u00e1\u013eom,",
+                      "[H]\u00d3 Kr\u00e1\u013eom je [G]Boh. ",
+                      "{eov}",
+                      "{soc}",
+                      "/: P[D]ozdvihnime svoje srdcia,",
+                      " [A]pozdvihnime svoje dlane, [Hmi]postavme sa ",
+                      "pred tv\u00e1r P\u00e1na a [G]velebme Ho.:/  ",
+                      "{eoc}"
+                    ]
+                  },
+                  {
+                    "title": "Bo\u017ee, Ot\u010de, teraz vid\u00edm",
+                    "text": [
+                      "[Emi]Bo\u017ee, Ot\u010de, teraz vid\u00edm, [D]ak\u00fd som bol slep\u00fd,",
+                      "Ty v\u0161ak [Ami]si m\u00f4j Otec l\u00e1skypln\u00fd, [H7]starostliv\u00fd P\u00e1n.",
+                      "[Emi]Teraz som Tvoj syn prijat\u00fd, [D]patr\u00edm medzi Tvoje deti.",
+                      "[Ami]Samotu viac nepozn\u00e1m, ve\u010f [H7]Boha Otca pri sebe m\u00e1m.",
+                      "/: [Emi]Budem [Ami]spieva\u0165 chv\u00e1ly, [D]budem [G]spieva\u0165 chv\u00e1ly,",
+                      "[C]budem [Ami]spieva\u0165 chv\u00e1ly, [H7]k\u00fdm \u017eivot m\u00e1m. :/"
+                    ]
+                  },
+                  {
+                    "title": "Cel\u00fd \u017eivot chcem spieva\u0165 Tebe, Pane",
+                    "text": [
+                      "{sov}",
+                      "[C]Ce[Emi]l\u00fd [C7]\u017eivot chcem [F]spieva\u0165 Tebe, Pa[C]ne, ospevo[Dmi]va\u0165 budem [G]\u0164a pokia\u013e \u017ei[C]je[Emi]m.[Dmi][G]",
+                      "[C]Na [Emi]Teba [C7]myslie\u0165, Pa[F]ne, je najmil[C]\u0161ie, radujme [Dmi]sa, vese\u013eme [G7]sa v P\u00e1no[C]vi[F].",
+                      "{eov}",
+                      "{soc}",
+                      "/:[C] Chv\u00e1\u013e P\u00e1na [Dmi]du\u0161a mo[G]ja, halelu[C]ja[Ami], chv\u00e1\u013e P\u00e1na [Dmi]du\u0161a mo[G7]ja, halelu[C]ja[1C7] :/.[2FC]",
+                      "{eoc}",
+                      "{sov}",
+                      "Cel\u00fd \u017eivot chcem sl\u00fa\u017ei\u0165 Tebe, Pane, po\u010d\u00fava\u0165 Tvoj hlas budem pokia\u013e \u017eijem.",
+                      "V \u017eiv\u00fa obe\u0165 Ti d\u00e1vam seba, Pane, na olt\u00e1r Tvoj d\u00e1vam sa posv\u00e4\u0165 ma.     R:",
+                      "{eov}"
+                    ]
+                  },
+                  {
+                    "title": "Ty si P\u00e1nom, Ty si Kr\u00e1\u013eom",
+                    "text": [
+                      "{sov}",
+                      "[D]Ty si P\u00e1nom, [A]Ty si Kr\u00e1\u013eom,",
+                      "[H]\u00d3 Kr\u00e1\u013eom je [G]Boh. ",
+                      "{eov}",
+                      "{soc}",
+                      "/: P[D]ozdvihnime svoje srdcia,",
+                      " [A]pozdvihnime svoje dlane, [Hmi]postavme sa ",
+                      "pred tv\u00e1r P\u00e1na a [G]velebme Ho.:/  ",
+                      "{eoc}"
+                    ]
+                  },
+                  {
+                    "title": "Spasenia skalou mojou si pevnou",
+                    "text": [
+                      "{sov}",
+                      "[Hmi]Spasenia Ska[F#mi]lou mo[Hmi]jou si [F#mi]pevnou, ",
+                      "[Emi]\u017eivota si[A]lou si [Hmi]Ty.",
+                      "V Tebe m\u00e1m n\u00e1dej, si ve\u010dnou Pravdou, ",
+                      "ku Tebe n\u00f4\u017eem v\u017edy pr\u00edjs\u0165.",
+                      "{eov}",
+                      "{soc}",
+                      " Pane, [Emi]ver\u00edm [A]Ti, v Te[F#mi]ba ve[Hmi]r\u00edm, ",
+                      "Tvoju [Emi]l\u00e1sku [A]pozn\u00e1[Hmi]vam,",
+                      "Ty mi [Emi]pom\u00e1[A]ha\u0161, ke\u010f [F#mi]nem\u00e1m s\u00edl,",
+                      "[Emi]svoj \u017eivot Ti prin\u00e1[F#7]\u0161am.",
+                      "{eoc}"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

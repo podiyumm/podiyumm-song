@@ -1,0 +1,14 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "db/changesets/202102210808_song_collection.json"
+      }
+    },
+    {
+      "include": {
+        "file": "db/changesets/202102210809_songs.json"
+      }
+    }
+  ]
+}
